@@ -9,6 +9,10 @@
     <!-- Google Fonts: Alex Brush for heading, Lora for body -->
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            height: 100%; /* Ensure html and body take full height */
+            overflow-y: auto; /* Explicitly make body scrollable vertically */
+        }
         body {
             font-family: 'Lora', serif; /* Default readable font for the entire body */
             background-color: #0A0A0A; /* Very dark, almost black for a space feel */
@@ -93,6 +97,10 @@
             background-color: #ffb3e6; /* Pink background when selected */
             color: #1a202c; /* Dark text for contrast */
             font-weight: 600;
+        }
+        /* Ensure fixed elements behave correctly during scrolling */
+        .fixed {
+            will-change: transform; /* Hint to the browser for better fixed positioning performance */
         }
     </style>
 </head>
