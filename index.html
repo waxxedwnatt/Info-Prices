@@ -14,28 +14,6 @@
             background-color: #0A0A0A; /* Very dark, almost black for a space feel */
             /* Space-like background using multiple radial gradients for stars and subtle nebulae */
             background-image:
-                /* Numerous small, faint white dots for stars */
-                radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 40% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 5% 90%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 95% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 60% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 25% 85%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 50% 5%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 10% 40%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 35% 15%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 65% 95%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 5% 5%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 95% 95%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 45% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 55% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.08) 0%, transparent 5%),
-
                 /* Larger, slightly brighter stars/dust clouds (existing) */
                 radial-gradient(circle at 30% 10%, rgba(255, 255, 255, 0.07) 0%, transparent 10%),
                 radial-gradient(circle at 75% 80%, rgba(255, 255, 255, 0.07) 0%, transparent 10%),
@@ -48,10 +26,6 @@
 
             /* Using viewport units (vw) for background size makes them responsive. */
             background-size:
-                /* More numerous and smaller star sizes */
-                0.2vw 0.2vw, 0.3vw 0.3vw, 0.25vw 0.25vw, 0.35vw 0.35vw, 0.2vw 0.2vw, 0.3vw 0.3vw, 0.25vw 0.25vw, 0.35vw 0.35vw,
-                0.22vw 0.22vw, 0.33vw 0.33vw, 0.28vw 0.28vw, 0.38vw 0.38vw, 0.21vw 0.21vw, 0.31vw 0.31vw, 0.26vw 0.26vw, 0.36vw 0.36vw,
-                0.23vw 0.23vw, 0.34vw 0.34vw, 0.29vw 0.29vw, 0.39vw 0.39vw,
                 /* Larger stars/dust clouds (existing) */
                 0.8vw 0.8vw, 0.9vw 0.9vw, 0.7vw 0.7vw,
                 /* Nebula sizes (larger, existing) */
@@ -59,8 +33,6 @@
             background-repeat: no-repeat;
             /* Scattered positions for stars and nebulae */
             background-position:
-                15% 25%, 80% 10%, 40% 70%, 5% 90%, 95% 50%, 60% 30%, 25% 85%, 70% 60%, /* Original stars */
-                50% 5%, 10% 40%, 90% 90%, 35% 15%, 65% 95%, 5% 5%, 95% 95%, 20% 50%, 80% 40%, 45% 80%, 55% 20%, 75% 75%, /* New stars */
                 30% 10%, 75% 80%, 10% 50%, /* Larger stars/dust */
                 90% 20%, 20% 80%, 50% 50%; /* Nebulae */
             background-attachment: fixed; /* Keep background fixed when scrolling */
@@ -103,7 +75,7 @@
             <!-- Profile Picture (positioned relative to header) -->
             <div class="absolute top-2 left-2 z-50">
                 <img
-                    src="SnapInsta.to_350363035_2517793265054278_5954953607083555612_n.jpeg"
+                    src="images/SnapInsta.to_350363035_2517793265054278_5954953607083555612_n.jpeg"
                     alt="Waxxedwnatt Profile Picture"
                     class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-custom-pink-header shadow-md"
                     onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';"
@@ -123,11 +95,11 @@
 
             <!-- Booking Information Section -->
             <section class="border-b pb-8 border-gray-700">
-                <h2 class="text-3xl sm:text-3xl font-bold text-custom-pink-heading mb-6 flex items-center">
+                <h2 class="text-2xl sm:text-3xl font-bold text-custom-pink-heading mb-6 flex items-center">
                     <svg class="w-8 h-8 mr-3 text-custom-pink-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     Booking Your Appointment
                 </h2>
-                <div class="space-y-4 text-lg sm:text-lg text-gray-300">
+                <div class="space-y-4 text-base sm:text-lg text-gray-300">
                     <p>To book your waxing appointment, please send a direct message (DM) to Waxxedwnatt.</p>
                     <p>I will gladly share available time slots. However, feel free to inquire about a specific date and time that works for you. I'll do my best to accommodate your schedule!</p>
                 </div>
